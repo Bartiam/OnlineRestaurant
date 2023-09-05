@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.26.3)
+
+add_executable(${PROJECT_NAME} main.cpp ${MY_INCLUDE_DIR}/restaurant.h restaurant.cpp)
+target_include_directories(${PROJECT_NAME} PUBLIC ${MY_INCLUDE_DIR})
